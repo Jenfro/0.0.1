@@ -1,0 +1,34 @@
+- 0.0.1
+  - MERN boilerplate
+  - Database
+    - Added files
+      - User.js
+      - UserSession.js
+  - Back End
+    - Functions:
+      - Signup
+        - Email, password, first name and last name are required from backend.
+        - Post to DB
+      - Signin
+        - Post token to storage for verification.
+      - Verify
+        - Get request to check token
+      - Logout
+        - Deletes session token from DB
+    - Missing tools
+      - Does not automatically log you in after Signup.
+      - No verification for email
+      - No check for valid email during Signup
+      - No password requirements (for user safety)
+    - Added files
+      - server/routes/signin.js
+  - Front End
+    - Functions
+      - Signup
+      - Signin
+      - Verify
+      - Logout
+    - Missing tools
+    - Added files
+      - client/app/components/Home/Home.js
+      - client/utils/storage.js
